@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitter Blur
 // @namespace    https://begaydocrime.org
-// @version      1.0
+// @version      1.1
 // @downloadURL  https://raw.githubusercontent.com/egefeyzioglu/twitter-blur/main/twitter-blur.user.js
 // @updateURL    https://raw.githubusercontent.com/egefeyzioglu/twitter-blur/main/twitter-blur.user.js
 // @match        https://twitter.com/*
@@ -9,7 +9,7 @@
 // @require      https://gist.githubusercontent.com/BrockA/2625891/raw/9c97aa67ff9c5d56be34a55ad6c18a314e5eb548/waitForKeyElements.js
 // @require      https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js#sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM
 // @require      https://openuserjs.org/src/libs/sizzle/GM_config.js
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @icon          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kj1Iw0AYht+mLRWpONhBxCFDdbKLijiWWiyChdJWaNXB5NI/aNKQpLg4Cq4FB38Wqw4uzro6uAqC4A+Is4OToouU+F1SaBHjwcc9vHfvy913BwjtOlPNQBxQNcvIphJiobgqhl4RQJAKGJGYqadzi3l4jq97+Ph8F+NZ3vv+HENKyWSATySOM92wiDeI5zYtnfM+cYRVJYX4nHjKoAMSP3JddvmNc8VhgWdGjHx2gThCLFb6WO5jVjVU4lniqKJqlC8UXFY4b3FW603WPSe/YbikreS4TjWOFJaQRgYiZDRRQx0WYjRrpJjI0nrCwz/m+DPkkslVAyNHEg2okBw/+Bv87q1Znpl2k8IJIPhi2x8TQGgX6LRs+/vYtjsngP8ZuNJ6/kYbmP8kvdXTokfA8DZwcd3T5D3gcgcYfdIlQ3IkP5VQLgPvZ/RMRfoKt8Dgmtu37jpOH4A89Wr5Bjg4BCYrlL3uce+B/r79u6fbvx8NqnJ+bJ/21QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+gEBQQBO1uEFQQAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAADpklEQVRYw+2YXWgcVRTHf/fupkWze2lIK1qcEWqhWKRYEKq09qEgpYL4ICgmzYxK/UCokiDkSX2ohD4YKH3xKeiMoVpEqFSjiLQIglK/qGJEbDWdG0u1xeBMaknSzPEhQ02bTTbd2eyC5P8ycD/O/c25c+49Z2BZy2qu1FIavyVMVFFkB/AosAVoA2LgJ2BIod6J/PKlSnOdcHyN9UrnrwC6QbwapaYir/x3PeCcIF4PDADbFxg2CjxjfTMEcOvgP0qnl7eL8AKKD61nBtQsg33A3UqpByOvPJELLozvQRjKPFZNKfAaYIAHABcYFs3m0S4zORvwNLAO+Egp/XDklS7VBpfcjMhJ4KYa3+8v4D7rm+HbBi+26JntTdozOIBdIuknTpisrsm8SF8OuF8UdAAbnSAO0+npnXrGJu3XDNyGyDdOkGy9HutumLQDnTm+jrUCHwPvAmesbz7QAEqTVFoP5DMniPudIDaLc57sAFbkAGzNngeKBf0ywIwHW+Qc8GeFCQWgBzjlBHGPG8alKgvcnjP4LwPd1jfdv+0uyRVA+5gR4OgCE9cA/SJYJ4gPukGyZV0wriuMW5kT8GvrmwOzG4r/ndiqX5CuKlu0CtgryN4p5KwTxMeBL4EfQUUgY0t6kzhB3Avsb+LN9qn1zf1zPOgG8QaBexX6dSFtA3qbBHj22oaZIFFKgDeE9AKwCxhrEuBIZcCinAIuAC3ApkVeUUuhHyoCjnaYNDscmylR8HlFwCxe9gMXmwh4MvLNuXkBrV+OgKcBaRLge5UarzpsrW8OAU8CEw2Gm0YxWBUwg3wTxV3AYWCyQYBHrWdGFgXoBPEGhE5gGDiS3Y9LHByqb77O4pyrRekRkdQHnAZ573Dkl7+ar3OOByOvNAE836BgiVHqxYUGVMpIsL45ArzUAMAe65V/r7nsdIK4AzgIczLuemjA+mZPtUF6oU7rm0NKsR7oBo4B54HpOsAdVwX9XF0LdzccXymSvpJlOjoH3BcotdN65aQugG4YF0R4BNhXh5T+fSXsjh4347l+fbhvJ1omZRPwEODNKknz1BqvrkgL+04/0ZpeV0bthsmdIvIUcENW3TvAxiy9r4e+U/Bs5JsTNaf8bpCsFaQX2APcWCewn4E+rfXgma5SWquRq7bYDZJVgnRmf6O21hAMY1l1+JYUC8dGO1vTvG85b5C4QdwusA3YDNyRbX1b9ilIljv+AfwKfI/ihBL9beSXpljWsv5H+hcYKjXokVc9bAAAAABJRU5ErkJggg==
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
