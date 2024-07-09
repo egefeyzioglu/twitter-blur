@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Twitter Blur
 // @namespace    https://begaydocrime.org
-// @version      1.1
+// @version      1.2
 // @downloadURL  https://raw.githubusercontent.com/egefeyzioglu/twitter-blur/main/twitter-blur.user.js
 // @updateURL    https://raw.githubusercontent.com/egefeyzioglu/twitter-blur/main/twitter-blur.user.js
 // @match        https://twitter.com/*
+// @match        https://x.com/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
 // @require      https://gist.githubusercontent.com/BrockA/2625891/raw/9c97aa67ff9c5d56be34a55ad6c18a314e5eb548/waitForKeyElements.js
 // @require      https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js#sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM
